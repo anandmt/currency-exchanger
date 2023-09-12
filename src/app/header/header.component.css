@@ -1,0 +1,40 @@
+/* header.component.css (Dark Theme) */
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Light text color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff; /* Light link text color */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #007bff; /* Link color on hover (blue) */
+}

@@ -1,0 +1,8 @@
+<div class="currency-grid">
+  <!-- The grid data will be populated here dynamically -->
+  <div *ngFor="let currency of convertedValues" class="currency-card">
+    <h3>{{ currency.name }}</h3>
+    <p>{{ currency.code }}</p>
+    <p>Converted Amount: {{ currency.convertedAmount }}</p>
+  </div>
+</div>

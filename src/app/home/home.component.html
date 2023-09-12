@@ -1,0 +1,13 @@
+<div class="converter-sticky-panel">
+  <!-- Currency converter content here -->
+  <div class="container">
+    <app-currency-exchanger />
+  </div>
+</div>
+
+<div class="cards-grid">
+  <!-- 3x3 cards grid content here -->
+  <app-currency-grid
+    (conversionCompleted)="onConversionCompleted($event)"
+  ></app-currency-grid>
+</div>

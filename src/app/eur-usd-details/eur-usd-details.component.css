@@ -1,0 +1,45 @@
+/* Styles for EurUsdDetailsComponent */
+.details-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.details-header {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.details {
+  margin-top: 20px;
+}
+
+.exchange-rate-label {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.exchange-rate-value {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.back-button {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}

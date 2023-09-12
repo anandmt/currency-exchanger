@@ -1,0 +1,33 @@
+/* Converter sticky panel */
+.converter-sticky-panel {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1; /* Ensure it appears above content */
+}
+
+/* Cards grid container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Individual card styles */
+.card {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust as needed for your desired layout */
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}

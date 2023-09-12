@@ -1,0 +1,47 @@
+.currency-exchanger {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+button {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.result {
+  margin-top: 10px;
+}
+
+.highlighted {
+  background-color: #00ddff; /* Highlighted background color */
+}
+
+/* Circular button styles */
+.swap-button {
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 50%; /* Makes it circular */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Transition for color change and rotation */
+  outline: none;
+}
+
+.swap-button:hover {
+  background-color: #0056b3; /* Button color on hover */
+}
+
+/* Rotate animation when clicked */
+.swap-button.rotate {
+  transform: rotate(180deg); /* Rotate by 180 degrees */
+}
