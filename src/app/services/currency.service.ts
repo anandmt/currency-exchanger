@@ -8,7 +8,7 @@ import { Observable, Subject } from 'rxjs';
 export class CurrencyService {
   private amount!: number;
 
-  private apiKey = '0f42a5cee2a2e416517bdfbe6c45127f_temp';
+  private apiKey = 'API_KEY_READ_FROM_ENV';
   private apiUrl = `http://data.fixer.io/api/latest?access_key=${this.apiKey}`;
   private apiCurrencySymbols = `http://data.fixer.io/api/symbols?access_key=${this.apiKey}`;
 
