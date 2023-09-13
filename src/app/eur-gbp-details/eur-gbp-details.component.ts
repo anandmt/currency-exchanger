@@ -10,7 +10,6 @@ import { CurrencyService } from './../services/currency.service';
 })
 export class EurGbpDetailsComponent implements OnInit {
   exchangeRate: number | undefined;
-  isLoading: boolean = true;
   toCurrency: string = 'GBP';
   constructor(
     private http: HttpClient,
@@ -26,16 +25,8 @@ export class EurGbpDetailsComponent implements OnInit {
       .subscribe((data: any) => {
         if (data.rates && data.rates[this.toCurrency]) {
           this.exchangeRate = data.rates[this.toCurrency];
-          this.isLoading = false;
         }
       });
-
-    // this.http
-    //   .get('https://api.fixer.io/latest?&symbols=GBP')
-    //   .subscribe((data: any) => {
-    //     this.exchangeRate = data.rates.GBP;
-    //     this.isLoading = false;
-    //   });
   }
 
   navigateBack() {

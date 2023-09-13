@@ -4,6 +4,7 @@ import {
   mockApiResponse,
   mock9SymbolsResponse,
   mockSymbolsResponse,
+  mockTimeSeriesResponse,
 } from './../../assets/mock-api-response'; // Import the mock response
 
 @Injectable({
@@ -46,5 +47,9 @@ export class MockApiService {
 
   notifyConversionTrigger() {
     this.triggerConversionSubject.next();
+  }
+
+  getHistoricalRates() {
+    return of(mockTimeSeriesResponse);
   }
 }

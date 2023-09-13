@@ -1,0 +1,45 @@
+/* chart-container styles */
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* chart styles */
+canvas {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #ffffff; /* Add a white border around the chart */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Chart title styles */
+.chart-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Chart legend styles */
+.chart-legend {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.chart-legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.chart-legend-color {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}

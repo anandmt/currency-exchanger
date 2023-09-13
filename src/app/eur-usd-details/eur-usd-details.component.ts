@@ -10,7 +10,6 @@ import { CurrencyService } from './../services/currency.service';
 })
 export class EurUsdDetailsComponent implements OnInit {
   exchangeRate: number | undefined;
-  isLoading: boolean = true;
   toCurrency: string = 'USD';
 
   constructor(
@@ -26,7 +25,6 @@ export class EurUsdDetailsComponent implements OnInit {
       .subscribe((data: any) => {
         if (data.rates && data.rates[this.toCurrency]) {
           this.exchangeRate = data.rates[this.toCurrency];
-          this.isLoading = false;
         }
       });
   }
