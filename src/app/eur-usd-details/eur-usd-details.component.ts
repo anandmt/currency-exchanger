@@ -29,13 +29,6 @@ export class EurUsdDetailsComponent implements OnInit {
           this.isLoading = false;
         }
       });
-
-    // this.http
-    //   .get('https://api.fixer.io/latest?&symbols=USD')
-    //   .subscribe((data: any) => {
-    //     this.exchangeRate = data.rates.USD;
-    //     this.isLoading = false;
-    //   });
   }
 
   navigateBack() {

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CurrencyService } from './../services/currency.service';
-import{MockApiService} from './../services/mock-api.service'
+//import { MockApiService } from './../services/mock-api.service'; // uncomment this while development.
 
 @Component({
   selector: 'app-currency-exchanger',
@@ -15,7 +15,7 @@ export class CurrencyExchangerComponent implements OnInit {
   currencySymbols: Record<string, string> = {}; // Store currency symbols
   isSwapping: boolean = false; // Property to control the rotation
 
-  constructor(private currencyService: MockApiService) {}
+  constructor(private currencyService: CurrencyService) {}
 
   ngOnInit() {
     this.getCurrencySymbols();
