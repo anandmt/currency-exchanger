@@ -45,4 +45,20 @@ export class CurrencyService {
   getCurrencySymbols(): Observable<any> {
     return this.http.get(this.apiCurrencySymbols);
   }
+
+  getHistoricalRates(baseCurrency: string, targetCurrency: string) {
+    const today = new Date();
+    const endDate = today.toISOString().split('T')[0];
+    const startDate = new Date(
+      today.getFullYear() - 1,
+      today.getMonth(),
+      today.getDate()
+    )
+      .toISOString()
+      .split('T')[0];
+
+    const apiUrl = `https://data.fixer.io/api/timeseries?start_date=${startDate}&end_date=${endDate}&base=${baseCurrency}&symbols=${targetCurrency}&api_key=${this.apiKey}`;
+
+    return this.http.get(apiUrl);
+  }
 }
